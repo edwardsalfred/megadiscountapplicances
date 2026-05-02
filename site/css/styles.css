@@ -211,7 +211,7 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
 /* Phone + Shop Deals inside nav-links are mobile-drawer only */
 .nav-links > .nav-phone,
 .nav-links > .btn { display: none; }
-.nav-links a:not(.btn) {
+.nav-links a:not(.btn):not(.nav-phone) {
   font-family: var(--label);
   font-weight: 500;
   font-size: 0.9rem;
@@ -221,7 +221,7 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
   position: relative;
   padding: 8px 0;
 }
-.nav-links a:not(.btn)::after {
+.nav-links a:not(.btn):not(.nav-phone)::after {
   content: "";
   position: absolute;
   left: 0; right: 100%; bottom: 4px;
@@ -229,7 +229,7 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
   background: var(--red);
   transition: right .25s var(--ease);
 }
-.nav-links a:not(.btn):hover::after { right: 0; }
+.nav-links a:not(.btn):not(.nav-phone):hover::after { right: 0; }
 .nav-cta {
   display: flex;
   align-items: center;
@@ -253,8 +253,8 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
 }
 .nav-phone:hover {
   background: var(--navy);
-  color: var(--white);
-  border-color: var(--navy-deep);
+  color: var(--white) !important;
+  border-color: var(--navy);
 }
 .nav-phone .ph-icon {
   display: inline-block;
@@ -1376,13 +1376,13 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
   .nav-links.open {
     transform: translateY(0);
   }
-  .nav-links a:not(.btn) {
+  .nav-links a:not(.btn):not(.nav-phone) {
     font-size: 1.4rem;
     padding: 14px 0;
     width: 100%;
     border-bottom: 1px solid var(--hairline);
   }
-  .nav-links a:not(.btn)::after { display: none; }
+  .nav-links a:not(.btn):not(.nav-phone)::after { display: none; }
   .nav-links > .nav-phone,
   .nav-links > .btn {
     display: inline-flex;
