@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="/assets/logo/megalogo.jpg" type="image/jpeg" />
+<title>Competitive Analysis · Mega Discount Appliances</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f4f0;
+  --card:#fffefa;
+  --ink:#23201d;
+  --muted:#6b6661;
+  --hairline:#e6e1d6;
+  --terracotta:#c45d3e;
+  --navy:#0F2A5C;
+  --red:#D62027;
+  --gold:#C9A24A;
+  --serif:"Instrument Serif", Georgia, serif;
+  --sans:"DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:var(--sans);
+  font-size:15px;
+  line-height:1.6;
+  color:var(--ink);
+  background:var(--paper);
+  position:relative;
+}
+body::before{
+  content:"";
+  position:fixed; inset:0;
+  pointer-events:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.05'/></svg>");
+  z-index:0;
+}
+.page{
+  position:relative;
+  z-index:1;
+  max-width:880px;
+  margin:0 auto;
+  padding:80px 56px;
+}
+.cover{
+  text-align:center;
+  padding:80px 0 64px;
+  border-bottom:1px solid var(--hairline);
+  margin-bottom:64px;
+}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:var(--terracotta);
+  color:#fff;
+  font-size:11px;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  font-weight:600;
+  padding:8px 16px;
+  border-radius:999px;
+  margin-bottom:32px;
+}
+.cover h1{
+  font-family:var(--serif);
+  font-size:64px;
+  font-weight:400;
+  line-height:1;
+  margin:0 0 24px;
+  letter-spacing:-0.02em;
+}
+.cover .subtitle{
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:24px;
+  color:var(--muted);
+  margin-bottom:48px;
+}
+.cover .meta{
+  display:flex;
+  justify-content:center;
+  gap:48px;
+  flex-wrap:wrap;
+  font-size:13px;
+  color:var(--muted);
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+}
+.cover .meta strong{color:var(--ink);font-weight:600;}
+
+.section{margin-bottom:80px;}
+.section-num{
+  font-family:var(--serif);
+  font-size:80px;
+  line-height:1;
+  color:var(--terracotta);
+  opacity:0.3;
+  margin-bottom:8px;
+}
+.section h2{
+  font-family:var(--serif);
+  font-weight:400;
+  font-size:42px;
+  line-height:1.05;
+  margin:0 0 16px;
+  letter-spacing:-0.01em;
+}
+.section .lede{
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:20px;
+  color:var(--muted);
+  max-width:60ch;
+  margin-bottom:36px;
+}
+.section h3{
+  font-family:var(--sans);
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:0.16em;
+  color:var(--muted);
+  margin:36px 0 14px;
+}
+.section p{margin:0 0 14px;max-width:68ch;}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--hairline);
+  border-left:4px solid var(--terracotta);
+  border-radius:6px;
+  padding:28px 32px;
+  margin-bottom:18px;
+  transition:box-shadow .25s ease, transform .25s ease;
+}
+.card:hover{
+  box-shadow:0 8px 24px rgba(0,0,0,0.06);
+  transform:translateY(-2px);
+}
+.card .head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+  margin-bottom:14px;
+  flex-wrap:wrap;
+}
+.card h4{
+  font-family:var(--serif);
+  font-size:28px;
+  font-weight:400;
+  line-height:1;
+  margin:0;
+}
+.card .url{
+  font-size:12px;
+  color:var(--muted);
+  font-family:var(--sans);
+}
+.score{
+  display:inline-flex;
+  align-items:baseline;
+  gap:4px;
+  background:var(--paper);
+  padding:6px 14px;
+  border-radius:999px;
+  font-family:var(--serif);
+  font-size:18px;
+  font-weight:400;
+  border:1px solid var(--hairline);
+}
+.score em{font-style:normal;color:var(--terracotta);}
+.score .out{font-size:11px;color:var(--muted);font-family:var(--sans);}
+
+.swatches{
+  display:flex;
+  gap:8px;
+  margin:14px 0;
+  flex-wrap:wrap;
+}
+.swatch{
+  width:36px;height:36px;
+  border-radius:6px;
+  border:1px solid var(--hairline);
+}
+
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:12px;
+}
+.tag{
+  font-size:11px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+  background:var(--paper);
+  padding:4px 12px;
+  border-radius:999px;
+  border:1px solid var(--hairline);
+  font-weight:500;
+}
+
+table.compare{
+  width:100%;
+  border-collapse:collapse;
+  font-size:13px;
+  margin:24px 0;
+  background:var(--card);
+  border:1px solid var(--hairline);
+  border-radius:6px;
+  overflow:hidden;
+}
+table.compare th,table.compare td{
+  padding:12px 14px;
+  text-align:left;
+  border-bottom:1px solid var(--hairline);
+}
+table.compare th{
+  background:var(--paper);
+  font-weight:600;
+  font-size:11px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+table.compare td:first-child{
+  font-weight:600;
+  font-family:var(--serif);
+  font-size:16px;
+  color:var(--ink);
+}
+table.compare td.score-cell{
+  text-align:center;
+  font-family:var(--serif);
+  font-size:16px;
+  color:var(--terracotta);
+}
+table.compare tbody tr:hover{background:rgba(196,93,62,0.04);}
+
+.pattern{
+  background:var(--card);
+  border:1px solid var(--hairline);
+  border-left:4px solid var(--navy);
+  padding:24px 28px;
+  border-radius:6px;
+  margin-bottom:14px;
+}
+.pattern .num{
+  font-family:var(--serif);
+  font-size:36px;
+  line-height:1;
+  color:var(--navy);
+  margin-bottom:8px;
+}
+.pattern h4{
+  font-family:var(--serif);
+  font-size:22px;
+  font-weight:400;
+  margin:0 0 8px;
+}
+
+.flow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:32px 0;
+  color:var(--terracotta);
+  opacity:0.3;
+  font-size:32px;
+  letter-spacing:0.4em;
+}
+
+.exec-summary{
+  background:var(--card);
+  border:1px solid var(--hairline);
+  padding:36px 40px;
+  border-radius:8px;
+  margin-bottom:48px;
+  font-family:var(--serif);
+  font-size:22px;
+  line-height:1.5;
+  color:var(--ink);
+}
+
+.recommend{
+  background:linear-gradient(180deg, var(--card) 0%, var(--paper) 100%);
+  border:1px solid var(--hairline);
+  padding:40px;
+  border-radius:8px;
+  margin-bottom:24px;
+}
+.recommend h3{
+  font-family:var(--serif);
+  font-size:20px;
+  text-transform:none;
+  letter-spacing:0;
+  color:var(--ink);
+  margin:0 0 8px;
+}
+.recommend dl{margin:0;}
+.recommend dt{
+  font-size:11px;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-top:18px;
+  margin-bottom:6px;
+  font-weight:600;
+}
+.recommend dd{
+  margin:0;
+  font-size:15px;
+}
+
+.footer{
+  margin-top:80px;
+  padding-top:24px;
+  border-top:1px solid var(--hairline);
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+  letter-spacing:0.08em;
+}
+.footer .credit-line{
+  margin-top:20px;
+  padding-top:20px;
+  border-top:1px solid var(--hairline);
+}
+.footer .credit-line a{
+  color:var(--terracotta);
+  font-weight:600;
+  border-bottom:1px solid var(--terracotta);
+  text-decoration:none;
+}
+
+@media (max-width:640px){
+  .page{padding:48px 24px;}
+  .cover h1{font-size:42px;}
+  .cover .subtitle{font-size:18px;}
+  .section h2{font-size:30px;}
+  .section-num{font-size:56px;}
+  .exec-summary{font-size:17px;padding:24px;}
+  .card{padding:20px 22px;}
+  .card .head{flex-direction:column;align-items:flex-start;}
+  table.compare{font-size:11px;}
+  table.compare th,table.compare td{padding:8px;}
+}
+
+@media print{
+  body{background:#fff;}
+  body::before{display:none;}
+  .page{padding:24px;max-width:none;}
+  .card,.pattern{break-inside:avoid;}
+  .section{page-break-inside:auto;}
+}
+
+@page{size:A4;margin:18mm 14mm;}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- =========== COVER =========== -->
+<header class="cover">
+  <span class="badge">Competitive Analysis</span>
+  <h1>Mega Discount Appliances</h1>
+  <div class="subtitle">A research-led look at the Houston discount-appliance market &amp; where the brand can win</div>
+  <div class="meta">
+    <div><strong>Client</strong><br>Mega Discount Appliances</div>
+    <div><strong>Niche</strong><br>Discount Appliance Retail</div>
+    <div><strong>Market</strong><br>Greater Houston, TX</div>
+    <div><strong>Date</strong><br>May 2026</div>
+  </div>
+</header>
+
+<!-- =========== EXECUTIVE SUMMARY =========== -->
+<section class="section">
+  <div class="exec-summary">
+    The Houston discount-appliance market is crowded but visually average. Five direct competitors all run the same playbook — "% off retail, free delivery, 1-year warranty" — and most look like ecommerce templates. Mega Discount Appliances has two assets none of them have: <em>specialty premium brands</em> (Waterdrop, Robam, Seewin, Casabrews) and a <em>retail-circular brand identity</em> (the bold navy-and-red logo). The wedge is to keep the savings claim that wins the niche while leveling up to a brand experience that doesn't look like a 2014 ecommerce template.
+  </div>
+</section>
+
+<!-- =========== METHODOLOGY =========== -->
+<section class="section">
+  <div class="section-num">01</div>
+  <h2>How we ran this</h2>
+  <p class="lede">Search the niche, score the field, deep-scrape the leaders.</p>
+  <p>We searched Houston for "discount appliance store," "scratch and dent appliances," and "open box appliances." We collected the top 10 results, scored each on the eight criteria below, and deep-scraped the top five for visual identity, content strategy, conversion strategy, and trust-signal placement. Findings synthesised against the client's existing site to identify gaps and opportunities.</p>
+  <div class="tags">
+    <span class="tag">Search Visibility</span>
+    <span class="tag">Reviews</span>
+    <span class="tag">Visual Design</span>
+    <span class="tag">Mobile Responsive</span>
+    <span class="tag">Content Depth</span>
+    <span class="tag">Social Proof</span>
+    <span class="tag">CTA Strategy</span>
+    <span class="tag">Page Speed</span>
+  </div>
+</section>
+
+<div class="flow">···</div>
+
+<!-- =========== COMPETITOR PROFILES =========== -->
+<section class="section">
+  <div class="section-num">02</div>
+  <h2>Top 5 competitor profiles</h2>
+  <p class="lede">The five sites Mega Discount is genuinely competing with, ranked by overall score.</p>
+
+  <div class="card">
+    <div class="head">
+      <div>
+        <h4>Katy Discounted Appliances</h4>
+        <div class="url">katydiscountedappliances.com</div>
+      </div>
+      <div class="score"><em>7.5</em><span class="out">/10</span></div>
+    </div>
+    <div class="swatches">
+      <div class="swatch" style="background:#003B7A;"></div>
+      <div class="swatch" style="background:#E63B2E;"></div>
+      <div class="swatch" style="background:#ffffff;"></div>
+    </div>
+    <p><strong>Strengths:</strong> The strongest site in the niche. Clear "Up to 60% Off" hero claim. Brand-logo trust strip (LG, Samsung, Whirlpool, Frigidaire, GE). Triple-bundled value-prop: free delivery + free installation + 1-year warranty.</p>
+    <p><strong>Weaknesses:</strong> Generic ecommerce-template aesthetic. No founder presence. Identical to its peers visually.</p>
+    <div class="tags"><span class="tag">SEO 9</span><span class="tag">Reviews 8</span><span class="tag">Visual 7</span><span class="tag">CTA 8</span></div>
+  </div>
+
+  <div class="card">
+    <div class="head">
+      <div>
+        <h4>Appliance Outlet Texas</h4>
+        <div class="url">applianceoutlettexas.com</div>
+      </div>
+      <div class="score"><em>7.3</em><span class="out">/10</span></div>
+    </div>
+    <div class="swatches">
+      <div class="swatch" style="background:#1B3D6E;"></div>
+      <div class="swatch" style="background:#F4A91A;"></div>
+      <div class="swatch" style="background:#ffffff;"></div>
+    </div>
+    <p><strong>Strengths:</strong> Largest by inventory (8 locations); strong financing partnerships; broad SEO presence.</p>
+    <p><strong>Weaknesses:</strong> Corporate / impersonal feel. Hard to tell apart from a big-box store. Loses on memorability.</p>
+    <div class="tags"><span class="tag">SEO 9</span><span class="tag">Content 8</span><span class="tag">Visual 6</span></div>
+  </div>
+
+  <div class="card">
+    <div class="head">
+      <div>
+        <h4>Appliances4Less Houston</h4>
+        <div class="url">appliances4lesshouston.com</div>
+      </div>
+      <div class="score"><em>6.6</em><span class="out">/10</span></div>
+    </div>
+    <div class="swatches">
+      <div class="swatch" style="background:#C0202B;"></div>
+      <div class="swatch" style="background:#1A1A1A;"></div>
+      <div class="swatch" style="background:#ffffff;"></div>
+    </div>
+    <p><strong>Strengths:</strong> Direct price comparisons against Home Depot, Lowe's, Best Buy. 24-hour express delivery. WashTower hero pickup. Closest brand-color match to Mega's palette.</p>
+    <p><strong>Weaknesses:</strong> Mixed photography style. Plain typography. No customer reviews surfacing on home.</p>
+    <div class="tags"><span class="tag">SEO 8</span><span class="tag">CTA 7</span><span class="tag">Visual 6</span></div>
+  </div>
+
+  <div class="card">
+    <div class="head">
+      <div>
+        <h4>Appliance Barn</h4>
+        <div class="url">appliancebarntx.com</div>
+      </div>
+      <div class="score"><em>6.4</em><span class="out">/10</span></div>
+    </div>
+    <div class="swatches">
+      <div class="swatch" style="background:#cfd4db;"></div>
+      <div class="swatch" style="background:#2A4A6B;"></div>
+      <div class="swatch" style="background:#ffffff;"></div>
+    </div>
+    <p><strong>Strengths:</strong> Strong financing partner stack (Snap, Acima, American First, Synchrony). "No credit needed" hook. Family-owned positioning. Multi-location footprint.</p>
+    <p><strong>Weaknesses:</strong> Many product shots are SVG placeholders — looks unfinished. No testimonials.</p>
+    <div class="tags"><span class="tag">CTA 8</span><span class="tag">Mobile 7</span><span class="tag">Social Proof 4</span></div>
+  </div>
+
+  <div class="card">
+    <div class="head">
+      <div>
+        <h4>West Appliances Liquidation</h4>
+        <div class="url">walhouston.com</div>
+      </div>
+      <div class="score"><em>5.6</em><span class="out">/10</span></div>
+    </div>
+    <div class="swatches">
+      <div class="swatch" style="background:#0E2E5C;"></div>
+      <div class="swatch" style="background:#A8B0BC;"></div>
+      <div class="swatch" style="background:#ffffff;"></div>
+    </div>
+    <p><strong>Strengths:</strong> Genuinely good educational copy reframing scratch-and-dent anxiety ("scratches disappear after install"). Phone-call funnel works for older buyers.</p>
+    <p><strong>Weaknesses:</strong> Visually dated. Phone-only CTA hurts online buyers. Weak trust signals.</p>
+    <div class="tags"><span class="tag">Content 8</span><span class="tag">Visual 5</span><span class="tag">Social Proof 3</span></div>
+  </div>
+</section>
+
+<!-- =========== COMPARISON TABLE =========== -->
+<section class="section">
+  <div class="section-num">03</div>
+  <h2>Side-by-side scoring</h2>
+  <p class="lede">Eight criteria, scored 1–10. Niche average: <strong style="color:var(--terracotta);">6.7</strong>.</p>
+
+  <table class="compare">
+    <thead>
+      <tr>
+        <th>Site</th>
+        <th>SEO</th>
+        <th>Reviews</th>
+        <th>Visual</th>
+        <th>Mobile</th>
+        <th>Content</th>
+        <th>Social Proof</th>
+        <th>CTA</th>
+        <th>Speed</th>
+        <th>Avg</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Katy Discounted</td><td>9</td><td>8</td><td>7</td><td>7</td><td>7</td><td>7</td><td>8</td><td>7</td><td class="score-cell">7.5</td></tr>
+      <tr><td>Appliance Outlet TX</td><td>9</td><td>8</td><td>6</td><td>7</td><td>8</td><td>7</td><td>7</td><td>6</td><td class="score-cell">7.3</td></tr>
+      <tr><td>Appliances4Less</td><td>8</td><td>7</td><td>6</td><td>6</td><td>7</td><td>6</td><td>7</td><td>6</td><td class="score-cell">6.6</td></tr>
+      <tr><td>Appliance Barn</td><td>7</td><td>5</td><td>7</td><td>7</td><td>6</td><td>4</td><td>8</td><td>7</td><td class="score-cell">6.4</td></tr>
+      <tr><td>West Liquidation</td><td>6</td><td>4</td><td>5</td><td>5</td><td>8</td><td>3</td><td>8</td><td>6</td><td class="score-cell">5.6</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<div class="flow">···</div>
+
+<!-- =========== SEO LANDSCAPE =========== -->
+<section class="section">
+  <div class="section-num">04</div>
+  <h2>SEO landscape &amp; the obvious wedge</h2>
+  <p class="lede">The mainstream keywords are competitive. The specialty-brand keywords are wide open.</p>
+
+  <h3>Crowded — strong competitors already rank</h3>
+  <p style="margin-bottom:18px;">"scratch and dent appliances Houston," "open box refrigerator Houston," "discount appliances Katy Freeway." Five well-funded local sites and a few national chains compete for these. Mega should target them but won't out-rank Katy Discounted or Appliance Outlet without sustained ad spend.</p>
+
+  <h3>Open — almost zero competition</h3>
+  <p>"Waterdrop dealer Houston," "Robam range hood Houston," "Seewin smart toilet Houston," "Casabrews espresso Houston." These specialty-brand searches return weak results city-wide. Mega is one of the few authorized dealers and can become the on-page answer for each — both for SEO and for Google Business profile.</p>
+
+  <p style="margin-top:18px;"><strong>Recommendation:</strong> Compete on the mainstream keywords (table stakes) but build the SEO wedge on specialty brands. Add a brand-page per specialty (Waterdrop / Robam / Seewin / Casabrews) post-launch with deep product content.</p>
+</section>
+
+<!-- =========== PATTERNS =========== -->
+<section class="section">
+  <div class="section-num">05</div>
+  <h2>Patterns of the top 10%</h2>
+  <p class="lede">Six moves the winning sites make and the bottom of the field does not.</p>
+
+  <div class="pattern">
+    <div class="num">01</div>
+    <h4>The triple-bundled value prop</h4>
+    <p>Free delivery · Free installation · 1-year warranty — stated together, above the fold. Mega already does delivery + warranty; should adopt all three on the homepage hero.</p>
+  </div>
+  <div class="pattern">
+    <div class="num">02</div>
+    <h4>The brand-logo trust strip</h4>
+    <p>Every winning site shows a brand-logo strip within the first scroll. KitchenAid · LG · Samsung · Whirlpool · Frigidaire · GE — plus Mega's specialty brands.</p>
+  </div>
+  <div class="pattern">
+    <div class="num">03</div>
+    <h4>The "% off" headline number</h4>
+    <p>Every site shouts a savings figure. Up to 60%. 50% off retail. This is what stops the scroll. Currently buried on Mega's site.</p>
+  </div>
+  <div class="pattern">
+    <div class="num">04</div>
+    <h4>Local / family / Houston-rooted positioning</h4>
+    <p>Big-box stores can't say "we're a family in Katy who'll pick up the phone." Every winning local site leans into this. Mega should too.</p>
+  </div>
+  <div class="pattern">
+    <div class="num">05</div>
+    <h4>Sticky tap-to-call</h4>
+    <p>Older homeowners — a huge slice of the appliance buyer base — call before they click. Phone CTA always visible above the fold and as a sticky element on mobile.</p>
+  </div>
+  <div class="pattern">
+    <div class="num">06</div>
+    <h4>Financing as a third hero element</h4>
+    <p>Half of buyers research on payments. Listed financing partners (Snap, Acima, Synchrony) build trust without committing to a specific deal upfront.</p>
+  </div>
+</section>
+
+<div class="flow">···</div>
+
+<!-- =========== RECOMMENDATIONS =========== -->
+<section class="section">
+  <div class="section-num">06</div>
+  <h2>Recommended design direction</h2>
+  <p class="lede">Backed by competitor data, grounded in the existing brand identity.</p>
+
+  <div class="recommend">
+    <h3>The strategic position</h3>
+    <p>Mega Discount Appliances should not look or sound like its direct competitors. The wedge is <em>premium-discount</em>: better brands than scratch-and-dent depots, better pricing than the big-box, with the warmth of a neighborhood family business.</p>
+
+    <dl>
+      <dt>Color Palette</dt>
+      <dd>Navy <code style="color:var(--navy);">#0F2A5C</code> · Red <code style="color:var(--red);">#D62027</code> · Cream <code>#F5F1E6</code> · supporting Gold <code style="color:var(--gold);">#C9A24A</code>. Keeps the existing logo intact while elevating it editorially. Cream background is the differentiator — every competitor uses pure white.</dd>
+
+      <dt>Typography</dt>
+      <dd><strong>Anton</strong> for display headlines (echoes the logo's bold-condensed lockup). <strong>Oswald</strong> for labels and price tags. <strong>Inter</strong> for body. Three Google Fonts, all production-grade.</dd>
+
+      <dt>Hero Strategy</dt>
+      <dd>Big condensed headline featuring "60%" as a red number. Visual side: a featured-deal card with countup animations on savings figures. Triple-bundled value-prop strip directly below the hero in solid navy.</dd>
+
+      <dt>Photography</dt>
+      <dd>Existing product shots (already self-hosted). Storefront photo and team portrait to be supplied by client and dropped into marked placeholders.</dd>
+
+      <dt>Animation</dt>
+      <dd>GSAP-driven hero entrance. Scroll-triggered section reveals. Count-up on stats. Marquee-style trust strip. Subtle hover parallax on category tiles. <code>prefers-reduced-motion</code> respected throughout.</dd>
+
+      <dt>Content Architecture</dt>
+      <dd>Hero → Trifecta → Hot Sale → Shop by Category → Specialty Brands → Trust Strip → Why Mega → Reviews → Visit Showroom → FAQ → Final CTA.</dd>
+    </dl>
+  </div>
+
+  <div class="recommend">
+    <h3>What to actively avoid</h3>
+    <p>Yellow blowout colors. SVG placeholder product shots. Stock photos that obviously aren't this store. Phone-only CTAs. Generic "Welcome to Our Store" hero copy. "Our Reviews" sections with empty placeholders. Em-dashes used as sentence-openers.</p>
+  </div>
+</section>
+
+<!-- =========== FOOTER =========== -->
+<footer class="footer">
+  <div>Confidential · For Mega Discount Appliances internal review · Not for distribution</div>
+  <div class="credit-line">
+    Created by <a href="https://www.chatbotboy.ai/" target="_blank" rel="noopener">Chatbot Boy AI</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

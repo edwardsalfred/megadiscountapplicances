@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Playwright / test artefacts
+.playwright-mcp/
+/competitive-analysis.png
+/desktop-*.png
+/final-*.png
+/mobile-*.png
+/trust-*.png
+/page-*.png
+
+# Local server logs
+*.log
+
+# Node (if added later)
+node_modules/
+npm-debug.log*
+.env
+.env.local
