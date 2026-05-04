@@ -74,22 +74,30 @@
     </a>
 
     <nav class="nav-links" id="navLinks" aria-label="Primary">
-      <a href="#hot-sale">Hot Sale</a>
-      <a href="#shop">Shop</a>
-      <a href="#brands">Brands</a>
-      <a href="#why">Why Mega</a>
-      <a href="#visit">Visit</a>
+      <a href="#hot-sale" data-i18n="nav.hot_sale">Hot Sale</a>
+      <a href="#shop" data-i18n="nav.shop">Shop</a>
+      <a href="#brands" data-i18n="nav.brands">Brands</a>
+      <a href="#why" data-i18n="nav.why">Why Mega</a>
+      <a href="#visit" data-i18n="nav.visit">Visit</a>
+      <button type="button" class="lang-toggle" data-lang="en" aria-pressed="false" aria-label="Cambiar a español">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>
+        <span class="lang-label">Español</span>
+      </button>
       <a href="tel:+13467304870" class="nav-phone">
         <span class="ph-icon" aria-hidden="true"></span>(346) 730-4870
       </a>
-      <a href="https://megadiscountappliance.com/shop/" class="btn btn-primary">Shop Deals</a>
+      <a href="https://megadiscountappliance.com/shop/" class="btn btn-primary" data-i18n="nav.shop_deals">Shop Deals</a>
     </nav>
 
     <div class="nav-cta">
+      <button type="button" class="lang-toggle" data-lang="en" aria-pressed="false" aria-label="Cambiar a español">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>
+        <span class="lang-label">Español</span>
+      </button>
       <a href="tel:+13467304870" class="nav-phone">
         <span class="ph-icon" aria-hidden="true"></span>(346) 730-4870
       </a>
-      <a href="https://megadiscountappliance.com/shop/" class="btn btn-primary">Shop Deals</a>
+      <a href="https://megadiscountappliance.com/shop/" class="btn btn-primary" data-i18n="nav.shop_deals">Shop Deals</a>
     </div>
 
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
@@ -100,39 +108,39 @@
 
 <a href="tel:+13467304870" class="mobile-call" aria-label="Call us">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.05-.24c1.16.39 2.41.6 3.7.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.46a1 1 0 0 1 1 1c0 1.29.21 2.54.6 3.7a1 1 0 0 1-.24 1.05z"/></svg>
-  Call Now
+  <span data-i18n="mobile_call.label">Call Now</span>
 </a>
 
 <!-- =============== HERO =============== -->
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div class="hero-text">
-      <span class="hero-eyebrow"><span class="pulse" aria-hidden="true"></span>Super Saving · Exciting Sales Event</span>
-      <h1>
+      <span class="hero-eyebrow" data-i18n-html="hero.eyebrow_html"><span class="pulse" aria-hidden="true"></span>Super Saving · Exciting Sales Event</span>
+      <h1 data-i18n-html="hero.h1_html">
         Save up to <span class="accent">60%</span> on the appliances Houston <span class="underline">families</span> actually want.
       </h1>
-      <p class="hero-lede">
+      <p class="hero-lede" data-i18n="hero.lede">
         Refrigerators, ranges, washers, dryers, dishwashers — plus Waterdrop, Robam, Seewin, and Casabrews. Premium brands at outlet prices, with free delivery, free installation, and a real 1-year warranty.
       </p>
       <div class="hero-ctas">
-        <a href="#hot-sale" class="btn btn-primary">Shop the Hot Sale <span class="arrow">→</span></a>
-        <a href="tel:+13467304870" class="btn btn-ghost">Call (346) 730-4870</a>
+        <a href="#hot-sale" class="btn btn-primary" data-i18n-html="hero.cta_primary_html">Shop the Hot Sale <span class="arrow">→</span></a>
+        <a href="tel:+13467304870" class="btn btn-ghost" data-i18n="hero.cta_secondary">Call (346) 730-4870</a>
       </div>
       <div class="hero-meta">
-        <div class="hero-meta-item"><span class="dot" aria-hidden="true"></span><span><strong>Houston Showroom</strong> · 10861 Katy Fwy</span></div>
-        <div class="hero-meta-item"><span class="dot" aria-hidden="true"></span><span><strong>Open Today</strong> · Mon–Sat 10–7 · Sun 11–6</span></div>
-        <div class="hero-meta-item"><span class="dot" aria-hidden="true"></span><span><strong>Same-Day</strong> Pickup Available</span></div>
+        <div class="hero-meta-item"><span class="dot" aria-hidden="true"></span><span data-i18n-html="hero.meta_1_html"><strong>Houston Showroom</strong> · 10861 Katy Fwy</span></div>
+        <div class="hero-meta-item"><span class="dot" aria-hidden="true"></span><span data-i18n-html="hero.meta_2_html"><strong>Open Today</strong> · Mon–Sat 10–7 · Sun 11–6</span></div>
+        <div class="hero-meta-item"><span class="dot" aria-hidden="true"></span><span data-i18n-html="hero.meta_3_html"><strong>Same-Day</strong> Pickup Available</span></div>
       </div>
     </div>
 
     <div class="hero-visual">
       <div class="hero-card">
-        <span class="hero-card-tag">Featured Deal · 13% Off</span>
+        <span class="hero-card-tag" data-i18n="hero.card_tag">Featured Deal · 13% Off</span>
         <div class="hero-card-img">
           <img src="/assets/products/waterdrop-x12.jpg" alt="Waterdrop X12 Reverse Osmosis water filtration system" />
         </div>
         <div class="hero-card-foot">
-          <div class="hero-card-name">Waterdrop X12<br>RO System</div>
+          <div class="hero-card-name" data-i18n-html="hero.card_name_html">Waterdrop X12<br>RO System</div>
           <div class="hero-card-prices">
             <div class="hero-card-was">$1,299</div>
             <div class="hero-card-now">$1,029</div>
@@ -141,11 +149,11 @@
       </div>
       <div class="hero-stat hero-stat-1">
         <div class="num"><span class="countup" data-to="60" data-suffix="%">60%</span></div>
-        <span class="label">Off Retail</span>
+        <span class="label" data-i18n="hero.stat_1_label">Off Retail</span>
       </div>
       <div class="hero-stat hero-stat-2">
         <div class="num"><span class="countup" data-to="72" data-suffix="h">72h</span></div>
-        <span class="label">Pro Install</span>
+        <span class="label" data-i18n="hero.stat_2_label">Pro Install</span>
       </div>
     </div>
   </div>
@@ -159,22 +167,22 @@
         <div class="trifecta-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11l1 4h6v6h-2a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0V7Z"/><circle cx="6" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
         </div>
-        <div class="trifecta-title">Delivered.</div>
-        <div class="trifecta-sub">Same-day pickup · Weekly delivery</div>
+        <div class="trifecta-title" data-i18n="trifecta.delivered_title">Delivered.</div>
+        <div class="trifecta-sub" data-i18n="trifecta.delivered_sub">Same-day pickup · Weekly delivery</div>
       </div>
       <div class="trifecta-item reveal">
         <div class="trifecta-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 0 5 5l-2.7-1L18 8l-2.3-.7-1-1Z"/><path d="m12 8 1.5 1.5L4 19l-2 2 2-2 9.5-9.5"/><path d="m20 14 1 1 1-1"/></svg>
         </div>
-        <div class="trifecta-title">Installed.</div>
-        <div class="trifecta-sub">Pro on-site service · Within 72 hours</div>
+        <div class="trifecta-title" data-i18n="trifecta.installed_title">Installed.</div>
+        <div class="trifecta-sub" data-i18n="trifecta.installed_sub">Pro on-site service · Within 72 hours</div>
       </div>
       <div class="trifecta-item reveal">
         <div class="trifecta-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
         </div>
-        <div class="trifecta-title">Warrantied.</div>
-        <div class="trifecta-sub">1-year free · Up to 4 years</div>
+        <div class="trifecta-title" data-i18n="trifecta.warrantied_title">Warrantied.</div>
+        <div class="trifecta-sub" data-i18n="trifecta.warrantied_sub">1-year free · Up to 4 years</div>
       </div>
     </div>
   </div>
@@ -185,55 +193,55 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <span class="eyebrow">Hot Sale · This Week</span>
-        <h2>Real prices.<br>Real savings.<br>While they last.</h2>
+        <span class="eyebrow" data-i18n="hot_sale.eyebrow">Hot Sale · This Week</span>
+        <h2 data-i18n-html="hot_sale.h2_html">Real prices.<br>Real savings.<br>While they last.</h2>
       </div>
-      <p class="lede">
+      <p class="lede" data-i18n="hot_sale.lede">
         Three picks our buyers are most excited about right now. Stop by the showroom or call to confirm in-stock — featured deals move fast.
       </p>
     </div>
 
     <div class="hot-sale-grid">
       <article class="deal-card reveal">
-        <span class="deal-tag">Save $200</span>
+        <span class="deal-tag" data-i18n="deal.save_200">Save $200</span>
         <div class="deal-img">
           <img src="/assets/products/smart-toilet.webp" alt="Seewin Munich Pro smart bidet toilet" loading="lazy" />
         </div>
         <div class="deal-brand">Seewin</div>
-        <h3 class="deal-name">Smart Toilet — Munich Pro</h3>
+        <h3 class="deal-name" data-i18n="deal.smart_toilet_name">Smart Toilet — Munich Pro</h3>
         <div class="deal-prices">
           <span class="deal-now">$1,399</span>
           <span class="deal-was">$1,599</span>
         </div>
-        <a href="https://megadiscountappliance.com/shop/" class="deal-link">View Details <span class="arrow">→</span></a>
+        <a href="https://megadiscountappliance.com/shop/" class="deal-link" data-i18n-html="deal.view_details_html">View Details <span class="arrow">→</span></a>
       </article>
 
       <article class="deal-card reveal">
-        <span class="deal-tag">Save $270</span>
+        <span class="deal-tag" data-i18n="deal.save_270">Save $270</span>
         <div class="deal-img">
           <img src="/assets/products/waterdrop-x12.jpg" alt="Waterdrop X Series X12 reverse osmosis system" loading="lazy" />
         </div>
         <div class="deal-brand">Waterdrop</div>
-        <h3 class="deal-name">X Series RO System X12</h3>
+        <h3 class="deal-name" data-i18n="deal.x12_name">X Series RO System X12</h3>
         <div class="deal-prices">
           <span class="deal-now">$1,029</span>
           <span class="deal-was">$1,299</span>
         </div>
-        <a href="https://megadiscountappliance.com/shop/" class="deal-link">View Details <span class="arrow">→</span></a>
+        <a href="https://megadiscountappliance.com/shop/" class="deal-link" data-i18n-html="deal.view_details_html">View Details <span class="arrow">→</span></a>
       </article>
 
       <article class="deal-card reveal">
-        <span class="deal-tag">Save $200</span>
+        <span class="deal-tag" data-i18n="deal.save_200">Save $200</span>
         <div class="deal-img">
           <img src="/assets/products/robam-rmax3.webp" alt="ROBAM R-Max3 30 inch range hood" loading="lazy" />
         </div>
         <div class="deal-brand">ROBAM</div>
-        <h3 class="deal-name">Range Hood R-Max3 — 30″</h3>
+        <h3 class="deal-name" data-i18n="deal.range_hood_name">Range Hood R-Max3 — 30″</h3>
         <div class="deal-prices">
           <span class="deal-now">$1,349</span>
           <span class="deal-was">$1,549</span>
         </div>
-        <a href="https://megadiscountappliance.com/shop/" class="deal-link">View Details <span class="arrow">→</span></a>
+        <a href="https://megadiscountappliance.com/shop/" class="deal-link" data-i18n-html="deal.view_details_html">View Details <span class="arrow">→</span></a>
       </article>
     </div>
   </div>
@@ -244,10 +252,10 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <span class="eyebrow navy">Shop By Category</span>
-        <h2>Built for the way Houston cooks, cleans, and lives.</h2>
+        <span class="eyebrow navy" data-i18n="shop.eyebrow">Shop By Category</span>
+        <h2 data-i18n="shop.h2">Built for the way Houston cooks, cleans, and lives.</h2>
       </div>
-      <p class="lede">
+      <p class="lede" data-i18n="shop.lede">
         Six core categories — every one stocked with the brands Houston families ask for, and a few specialty lines you won't find anywhere else in town.
       </p>
     </div>
@@ -256,42 +264,42 @@
       <a href="https://megadiscountappliance.com/product-category/refrigerator/" class="cat-tile reveal">
         <img src="/assets/categories/refrigerator.webp" alt="Refrigerator category" loading="lazy" />
         <div class="cat-label">
-          <div class="name">Refrigerators</div>
+          <div class="name" data-i18n="cat.refrigerators">Refrigerators</div>
           <div class="arr"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
         </div>
       </a>
       <a href="https://megadiscountappliance.com/product-category/washer/" class="cat-tile reveal">
         <img src="/assets/categories/laundry.webp" alt="Laundry category" loading="lazy" />
         <div class="cat-label">
-          <div class="name">Laundry</div>
+          <div class="name" data-i18n="cat.laundry">Laundry</div>
           <div class="arr"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
         </div>
       </a>
       <a href="https://megadiscountappliance.com/product-category/dish-washer/" class="cat-tile reveal">
         <img src="/assets/categories/dishwasher.webp" alt="Dishwasher category" loading="lazy" />
         <div class="cat-label">
-          <div class="name">Dishwashers</div>
+          <div class="name" data-i18n="cat.dishwashers">Dishwashers</div>
           <div class="arr"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
         </div>
       </a>
       <a href="https://megadiscountappliance.com/product-category/rangehood/" class="cat-tile reveal">
         <img src="/assets/categories/range.webp" alt="Range and cooktops category" loading="lazy" />
         <div class="cat-label">
-          <div class="name">Ranges</div>
+          <div class="name" data-i18n="cat.ranges">Ranges</div>
           <div class="arr"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
         </div>
       </a>
       <a href="https://megadiscountappliance.com/product-category/rangehood/" class="cat-tile reveal">
         <img src="/assets/categories/robam.webp" alt="Robam premium range hoods" loading="lazy" />
         <div class="cat-label">
-          <div class="name">Range Hoods</div>
+          <div class="name" data-i18n="cat.range_hoods">Range Hoods</div>
           <div class="arr"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
         </div>
       </a>
       <a href="https://megadiscountappliance.com/product-category/4-heart-filter-purifier/" class="cat-tile reveal">
         <img src="/assets/categories/waterdrop.webp" alt="Water filtration and purifiers" loading="lazy" />
         <div class="cat-label">
-          <div class="name">Water Filtration</div>
+          <div class="name" data-i18n="cat.water_filtration">Water Filtration</div>
           <div class="arr"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
         </div>
       </a>
@@ -304,25 +312,25 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <span class="eyebrow">Specialty Brands</span>
-        <h2>Premium kitchen and lifestyle brands you won't find at the big-box store.</h2>
+        <span class="eyebrow" data-i18n="specialty.eyebrow">Specialty Brands</span>
+        <h2 data-i18n="specialty.h2">Premium kitchen and lifestyle brands you won't find at the big-box store.</h2>
       </div>
-      <p class="lede">
+      <p class="lede" data-i18n="specialty.lede">
         We carry a curated set of specialty brands that serious home cooks, design-led homeowners, and water-quality nerds ask for by name. Authorized Houston dealer for each.
       </p>
     </div>
 
     <div class="brand-row reveal">
       <div class="brand-text">
-        <span class="brand-tag">Water Filtration</span>
+        <span class="brand-tag" data-i18n="brand.water_tag">Water Filtration</span>
         <h3 class="brand-name">Waterdrop</h3>
-        <p class="brand-desc">Clean, safe, great-tasting water through advanced reverse-osmosis filtration. Slim under-counter footprint, minimalist design, dramatic upgrade from city water.</p>
+        <p class="brand-desc" data-i18n="brand.waterdrop_desc">Clean, safe, great-tasting water through advanced reverse-osmosis filtration. Slim under-counter footprint, minimalist design, dramatic upgrade from city water.</p>
         <div class="brand-feat">
           <span class="pill">X8 / X10 / X12 / X14 / X16</span>
           <span class="pill">G3 / G3P600 / G3P800</span>
           <span class="pill">Tankless RO</span>
         </div>
-        <a href="https://megadiscountappliance.com/product-category/4-heart-filter-purifier/" class="btn btn-secondary">Shop Waterdrop <span class="arrow">→</span></a>
+        <a href="https://megadiscountappliance.com/product-category/4-heart-filter-purifier/" class="btn btn-secondary" data-i18n-html="brand.shop_waterdrop_html">Shop Waterdrop <span class="arrow">→</span></a>
       </div>
       <div class="brand-visual">
         <img src="/assets/categories/waterdrop.webp" alt="Waterdrop water filtration system installed" loading="lazy" />
@@ -331,15 +339,15 @@
 
     <div class="brand-row flip reveal">
       <div class="brand-text">
-        <span class="brand-tag">Kitchen Ventilation</span>
+        <span class="brand-tag" data-i18n="brand.kitchen_tag">Kitchen Ventilation</span>
         <h3 class="brand-name">ROBAM</h3>
-        <p class="brand-desc">Premium kitchen appliances known for their advanced range hoods, cooktops, and ovens. Engineered for serious cooking — and serious-looking kitchens.</p>
+        <p class="brand-desc" data-i18n="brand.robam_desc">Premium kitchen appliances known for their advanced range hoods, cooktops, and ovens. Engineered for serious cooking — and serious-looking kitchens.</p>
         <div class="brand-feat">
           <span class="pill">R-Max3 30″ Hood</span>
           <span class="pill">Built-In Cooktops</span>
           <span class="pill">Steam Ovens</span>
         </div>
-        <a href="https://megadiscountappliance.com/product-category/rangehood/" class="btn btn-secondary">Shop ROBAM <span class="arrow">→</span></a>
+        <a href="https://megadiscountappliance.com/product-category/rangehood/" class="btn btn-secondary" data-i18n-html="brand.shop_robam_html">Shop ROBAM <span class="arrow">→</span></a>
       </div>
       <div class="brand-visual">
         <img src="/assets/categories/robam.webp" alt="ROBAM range hood and cooktop in modern kitchen" loading="lazy" />
@@ -348,15 +356,15 @@
 
     <div class="brand-row reveal">
       <div class="brand-text">
-        <span class="brand-tag">Smart Bath</span>
+        <span class="brand-tag" data-i18n="brand.smart_bath_tag">Smart Bath</span>
         <h3 class="brand-name">Seewin</h3>
-        <p class="brand-desc">Advanced smart bidet toilets designed for comfort, hygiene, and modern living. Heated seat, instant-warm water, sensor flush, and auto night-light.</p>
+        <p class="brand-desc" data-i18n="brand.seewin_desc">Advanced smart bidet toilets designed for comfort, hygiene, and modern living. Heated seat, instant-warm water, sensor flush, and auto night-light.</p>
         <div class="brand-feat">
           <span class="pill">Munich Pro</span>
           <span class="pill">Tankless</span>
           <span class="pill">Voice Control</span>
         </div>
-        <a href="https://megadiscountappliance.com/product-category/smart-toilet/" class="btn btn-secondary">Shop Seewin <span class="arrow">→</span></a>
+        <a href="https://megadiscountappliance.com/product-category/smart-toilet/" class="btn btn-secondary" data-i18n-html="brand.shop_seewin_html">Shop Seewin <span class="arrow">→</span></a>
       </div>
       <div class="brand-visual">
         <img src="/assets/products/smart-toilet.webp" alt="Seewin Munich Pro smart bidet toilet" loading="lazy" />
@@ -365,15 +373,15 @@
 
     <div class="brand-row flip reveal">
       <div class="brand-text">
-        <span class="brand-tag">Coffee & Espresso</span>
+        <span class="brand-tag" data-i18n="brand.coffee_tag">Coffee & Espresso</span>
         <h3 class="brand-name">Casabrews</h3>
-        <p class="brand-desc">Café-quality espresso and coffee makers for home baristas. Sleek style, professional pressure, prosumer features at a price that doesn't make you flinch.</p>
+        <p class="brand-desc" data-i18n="brand.casabrews_desc">Café-quality espresso and coffee makers for home baristas. Sleek style, professional pressure, prosumer features at a price that doesn't make you flinch.</p>
         <div class="brand-feat">
           <span class="pill">Espresso Machines</span>
           <span class="pill">Milk Frothers</span>
           <span class="pill">Grinders</span>
         </div>
-        <a href="https://megadiscountappliance.com/product-category/coffee-machine/" class="btn btn-secondary">Shop Casabrews <span class="arrow">→</span></a>
+        <a href="https://megadiscountappliance.com/product-category/coffee-machine/" class="btn btn-secondary" data-i18n-html="brand.shop_casabrews_html">Shop Casabrews <span class="arrow">→</span></a>
       </div>
       <div class="brand-visual">
         <img src="/assets/categories/robam.webp" alt="Casabrews espresso machine on counter" loading="lazy" />
@@ -385,7 +393,7 @@
 <!-- =============== TRUST STRIP =============== -->
 <section class="trust">
   <div class="wrap">
-    <p class="trust-label reveal">Authorized Dealer · Trusted Brands</p>
+    <p class="trust-label reveal" data-i18n="trust.label">Authorized Dealer · Trusted Brands</p>
   </div>
   <div class="trust-marquee reveal" role="list" aria-label="Brands we carry">
     <div class="trust-row">
@@ -420,10 +428,10 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <span class="eyebrow">Why Mega Discount</span>
-        <h2>Big-box prices.<br>Neighborhood service.</h2>
+        <span class="eyebrow" data-i18n="why.eyebrow">Why Mega Discount</span>
+        <h2 data-i18n-html="why.h2_html">Big-box prices.<br>Neighborhood service.</h2>
       </div>
-      <p class="lede">
+      <p class="lede" data-i18n="why.lede">
         We sit between premium showroom and outlet liquidator. The result: better brands than the discounters, better pricing than the chains, and a real human who answers the phone.
       </p>
     </div>
@@ -431,23 +439,23 @@
     <div class="why-grid">
       <div class="why-card reveal">
         <div class="why-num"><span class="countup" data-to="60">60</span><span class="unit">%</span></div>
-        <div class="why-title">Off Retail</div>
-        <p class="why-desc">Save up to 60% on appliances Houston families actually want — every category, every week.</p>
+        <div class="why-title" data-i18n="why.off_retail_title">Off Retail</div>
+        <p class="why-desc" data-i18n="why.off_retail_desc">Save up to 60% on appliances Houston families actually want — every category, every week.</p>
       </div>
       <div class="why-card reveal">
         <div class="why-num"><span class="countup" data-to="1">1</span><span class="unit">yr+</span></div>
-        <div class="why-title">Real Warranty</div>
-        <p class="why-desc">Free 1-year warranty on every order. Upgradeable to four years for peace of mind.</p>
+        <div class="why-title" data-i18n="why.warranty_title">Real Warranty</div>
+        <p class="why-desc" data-i18n="why.warranty_desc">Free 1-year warranty on every order. Upgradeable to four years for peace of mind.</p>
       </div>
       <div class="why-card reveal">
         <div class="why-num"><span class="countup" data-to="72">72</span><span class="unit">hr</span></div>
-        <div class="why-title">Pro Install</div>
-        <p class="why-desc">Professional on-site service tailored to your home. Most installs scheduled within 72 hours.</p>
+        <div class="why-title" data-i18n="why.install_title">Pro Install</div>
+        <p class="why-desc" data-i18n="why.install_desc">Professional on-site service tailored to your home. Most installs scheduled within 72 hours.</p>
       </div>
       <div class="why-card reveal">
         <div class="why-num"><span class="countup" data-to="100">100</span><span class="unit">%</span></div>
-        <div class="why-title">Houston Local</div>
-        <p class="why-desc">Family-run, Katy-Freeway-based, serving Greater Houston and Dallas–Fort Worth. Real people, real number.</p>
+        <div class="why-title" data-i18n="why.local_title">Houston Local</div>
+        <p class="why-desc" data-i18n="why.local_desc">Family-run, Katy-Freeway-based, serving Greater Houston and Dallas–Fort Worth. Real people, real number.</p>
       </div>
     </div>
   </div>
@@ -458,10 +466,10 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <span class="eyebrow" style="color:#fff8;">Customer Stories</span>
-        <h2>What Houston is saying.</h2>
+        <span class="eyebrow" style="color:#fff8;" data-i18n="reviews.eyebrow">Customer Stories</span>
+        <h2 data-i18n="reviews.h2">What Houston is saying.</h2>
       </div>
-      <p class="lede">
+      <p class="lede" data-i18n-html="reviews.lede_html">
         Three recent customer reviews — pulled from our showroom guestbook and online listings. <em style="color:#fff8;">Note: client to replace with real Google review pulls.</em>
       </p>
     </div>
@@ -470,36 +478,36 @@
     <div class="reviews-grid">
       <article class="review-card reveal">
         <div class="stars">★★★★★</div>
-        <p class="review-quote">"Picked up a counter-depth fridge for almost half what Lowe's quoted. Delivered same week, installed clean, and the team called the next day to make sure everything was running. Will be back for the laundry pair."</p>
+        <p class="review-quote" data-i18n="review.1_quote">"Picked up a counter-depth fridge for almost half what Lowe's quoted. Delivered same week, installed clean, and the team called the next day to make sure everything was running. Will be back for the laundry pair."</p>
         <div class="review-meta">
           <div class="review-avatar">M</div>
           <div>
             <div class="review-name">Marcus T.</div>
-            <div class="review-where">Houston · Spring Branch</div>
+            <div class="review-where" data-i18n="review.1_where">Houston · Spring Branch</div>
           </div>
         </div>
       </article>
 
       <article class="review-card reveal">
         <div class="stars">★★★★★</div>
-        <p class="review-quote">"I wanted a Robam range hood for my kitchen remodel. Couldn't find an authorized dealer anywhere in Houston until I tried Mega. Honest pricing, knew the product cold, installed within the week."</p>
+        <p class="review-quote" data-i18n="review.2_quote">"I wanted a Robam range hood for my kitchen remodel. Couldn't find an authorized dealer anywhere in Houston until I tried Mega. Honest pricing, knew the product cold, installed within the week."</p>
         <div class="review-meta">
           <div class="review-avatar">S</div>
           <div>
             <div class="review-name">Sasha P.</div>
-            <div class="review-where">Houston · Memorial</div>
+            <div class="review-where" data-i18n="review.2_where">Houston · Memorial</div>
           </div>
         </div>
       </article>
 
       <article class="review-card reveal">
         <div class="stars">★★★★★</div>
-        <p class="review-quote">"Bought the Waterdrop X12 and a Seewin smart toilet on the same trip. The owner walked me through both options and didn't try to upsell. The whole experience felt like a neighborhood appliance shop should."</p>
+        <p class="review-quote" data-i18n="review.3_quote">"Bought the Waterdrop X12 and a Seewin smart toilet on the same trip. The owner walked me through both options and didn't try to upsell. The whole experience felt like a neighborhood appliance shop should."</p>
         <div class="review-meta">
           <div class="review-avatar">D</div>
           <div>
             <div class="review-name">Diana R.</div>
-            <div class="review-where">Katy, TX</div>
+            <div class="review-where" data-i18n="review.3_where">Katy, TX</div>
           </div>
         </div>
       </article>
@@ -512,24 +520,24 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <span class="eyebrow navy">Visit The Showroom</span>
-        <h2>10861 Katy Freeway.<br>See it. Touch it. Take it home.</h2>
+        <span class="eyebrow navy" data-i18n="visit.eyebrow">Visit The Showroom</span>
+        <h2 data-i18n-html="visit.h2_html">10861 Katy Freeway.<br>See it. Touch it. Take it home.</h2>
       </div>
-      <p class="lede">
+      <p class="lede" data-i18n="visit.lede">
         Some appliance decisions are easier in person. Stop by the showroom — see the units running, talk through your project, and walk out with a quote (or the appliance itself).
       </p>
     </div>
 
     <div class="visit-grid">
       <div class="visit-info reveal">
-        <h3 style="font-family:var(--display);font-size:1.6rem;color:var(--navy);margin-bottom:24px;">Showroom Details</h3>
+        <h3 style="font-family:var(--display);font-size:1.6rem;color:var(--navy);margin-bottom:24px;" data-i18n="visit.showroom_details">Showroom Details</h3>
         <div class="visit-rows">
           <div class="visit-row">
             <div class="ic">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-7.5-7-13a7 7 0 0 1 14 0c0 5.5-7 13-7 13Z"/><circle cx="12" cy="8" r="3"/></svg>
             </div>
             <div>
-              <div class="lbl">Address</div>
+              <div class="lbl" data-i18n="visit.address_lbl">Address</div>
               <div class="val"><a href="https://maps.google.com/?q=10861+Katy+Fwy+Houston+TX+77079" target="_blank" rel="noopener">10861 Katy Fwy<br>Houston, TX 77079</a></div>
             </div>
           </div>
@@ -538,7 +546,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.05-.24c1.16.39 2.41.6 3.7.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.46a1 1 0 0 1 1 1c0 1.29.21 2.54.6 3.7a1 1 0 0 1-.24 1.05z"/></svg>
             </div>
             <div>
-              <div class="lbl">Phone</div>
+              <div class="lbl" data-i18n="visit.phone_lbl">Phone</div>
               <div class="val"><a href="tel:+13467304870">(346) 730-4870</a></div>
             </div>
           </div>
@@ -547,7 +555,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
             </div>
             <div>
-              <div class="lbl">Email</div>
+              <div class="lbl" data-i18n="visit.email_lbl">Email</div>
               <div class="val"><a href="mailto:info@megadiscountappliance.com">info@megadiscountappliance.com</a></div>
             </div>
           </div>
@@ -556,12 +564,12 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
             </div>
             <div>
-              <div class="lbl">Hours</div>
-              <div class="val">Mon–Sat &nbsp;10am – 7pm<br>Sunday &nbsp;&nbsp;&nbsp;11am – 6pm</div>
+              <div class="lbl" data-i18n="visit.hours_lbl">Hours</div>
+              <div class="val" data-i18n-html="visit.hours_value_html">Mon–Sat &nbsp;10am – 7pm<br>Sunday &nbsp;&nbsp;&nbsp;11am – 6pm</div>
             </div>
           </div>
         </div>
-        <a href="https://maps.google.com/?q=10861+Katy+Fwy+Houston+TX+77079" target="_blank" rel="noopener" class="btn btn-primary" style="align-self:flex-start;">Get Directions <span class="arrow">→</span></a>
+        <a href="https://maps.google.com/?q=10861+Katy+Fwy+Houston+TX+77079" target="_blank" rel="noopener" class="btn btn-primary" style="align-self:flex-start;" data-i18n-html="visit.directions_html">Get Directions <span class="arrow">→</span></a>
       </div>
 
       <div class="visit-map reveal">
@@ -581,38 +589,38 @@
   <div class="wrap wrap-tight">
     <div class="section-head reveal">
       <div>
-        <span class="eyebrow">Frequently Asked</span>
-        <h2>Answers before you call.</h2>
+        <span class="eyebrow" data-i18n="faq.eyebrow">Frequently Asked</span>
+        <h2 data-i18n="faq.h2">Answers before you call.</h2>
       </div>
-      <p class="lede">
+      <p class="lede" data-i18n="faq.lede">
         Most calls we get are about delivery, warranty, and how the open-box pricing actually works. Here's the short version.
       </p>
     </div>
 
     <div class="faq-list">
       <details class="faq-item reveal">
-        <summary>How does the warranty work?</summary>
-        <div class="faq-body">Every appliance ships with a free 1-year warranty covering parts and labor. You can upgrade to a 4-year extended warranty at checkout — just ask, or mention it on the phone when you call to confirm stock.</div>
+        <summary data-i18n="faq.q1">How does the warranty work?</summary>
+        <div class="faq-body" data-i18n="faq.a1">Every appliance ships with a free 1-year warranty covering parts and labor. You can upgrade to a 4-year extended warranty at checkout — just ask, or mention it on the phone when you call to confirm stock.</div>
       </details>
       <details class="faq-item reveal">
-        <summary>Are these scratch-and-dent? Will my appliance look used?</summary>
-        <div class="faq-body">Most of our inventory is new, open-box, or display-floor units with cosmetic imperfections. The vast majority of "scratches" are in spots that disappear once the appliance is installed — the side of a fridge against a cabinet, the back of a washer, the corner of a dishwasher under the counter. We're upfront about every blemish before you buy, and we test every unit before it leaves the showroom.</div>
+        <summary data-i18n="faq.q2">Are these scratch-and-dent? Will my appliance look used?</summary>
+        <div class="faq-body" data-i18n="faq.a2">Most of our inventory is new, open-box, or display-floor units with cosmetic imperfections. The vast majority of "scratches" are in spots that disappear once the appliance is installed — the side of a fridge against a cabinet, the back of a washer, the corner of a dishwasher under the counter. We're upfront about every blemish before you buy, and we test every unit before it leaves the showroom.</div>
       </details>
       <details class="faq-item reveal">
-        <summary>Do you deliver and install?</summary>
-        <div class="faq-body">Yes. Same-day pickup is available at the showroom, weekly delivery routes cover Greater Houston, and we serve Dallas–Fort Worth on a separate schedule. Professional on-site installation is available within 72 hours of purchase for most jobs — call us to schedule.</div>
+        <summary data-i18n="faq.q3">Do you deliver and install?</summary>
+        <div class="faq-body" data-i18n="faq.a3">Yes. Same-day pickup is available at the showroom, weekly delivery routes cover Greater Houston, and we serve Dallas–Fort Worth on a separate schedule. Professional on-site installation is available within 72 hours of purchase for most jobs — call us to schedule.</div>
       </details>
       <details class="faq-item reveal">
-        <summary>Do you offer financing?</summary>
-        <div class="faq-body">Yes — call the showroom to discuss available financing partners and approval options. Most credit profiles qualify for some kind of payment plan.</div>
+        <summary data-i18n="faq.q4">Do you offer financing?</summary>
+        <div class="faq-body" data-i18n="faq.a4">Yes — call the showroom to discuss available financing partners and approval options. Most credit profiles qualify for some kind of payment plan.</div>
       </details>
       <details class="faq-item reveal">
-        <summary>What's your return policy?</summary>
-        <div class="faq-body">See our <a href="https://megadiscountappliance.com/refund-and-returns-policy/" style="color:var(--red);font-weight:600;">Refund &amp; Returns Policy</a> for the full terms. The short version: returns are evaluated case-by-case; defective units are covered by the warranty; cosmetic complaints on disclosed open-box items aren't returnable.</div>
+        <summary data-i18n="faq.q5">What's your return policy?</summary>
+        <div class="faq-body" data-i18n-html="faq.a5_html">See our <a href="https://megadiscountappliance.com/refund-and-returns-policy/" style="color:var(--red);font-weight:600;">Refund &amp; Returns Policy</a> for the full terms. The short version: returns are evaluated case-by-case; defective units are covered by the warranty; cosmetic complaints on disclosed open-box items aren't returnable.</div>
       </details>
       <details class="faq-item reveal">
-        <summary>Can you confirm what's actually in stock today?</summary>
-        <div class="faq-body">The featured deals on the website turn over fast. The fastest way to confirm a specific unit is in stock today is to call <a href="tel:+13467304870" style="color:var(--red);font-weight:600;">(346) 730-4870</a> — we'll check the floor in real time.</div>
+        <summary data-i18n="faq.q6">Can you confirm what's actually in stock today?</summary>
+        <div class="faq-body" data-i18n-html="faq.a6_html">The featured deals on the website turn over fast. The fastest way to confirm a specific unit is in stock today is to call <a href="tel:+13467304870" style="color:var(--red);font-weight:600;">(346) 730-4870</a> — we'll check the floor in real time.</div>
       </details>
     </div>
   </div>
@@ -622,11 +630,11 @@
 <section class="final-cta">
   <div class="wrap">
     <div class="reveal">
-      <h2>Ready to save on the appliance you've been putting off?</h2>
-      <p class="lede">Stop by the showroom on Katy Freeway, call us, or browse the deals online. Same-day pickup is on the table for most stocked items.</p>
+      <h2 data-i18n="cta.h2">Ready to save on the appliance you've been putting off?</h2>
+      <p class="lede" data-i18n="cta.lede">Stop by the showroom on Katy Freeway, call us, or browse the deals online. Same-day pickup is on the table for most stocked items.</p>
       <div class="ctas">
-        <a href="https://megadiscountappliance.com/shop/" class="btn btn-primary">Shop The Hot Sale <span class="arrow">→</span></a>
-        <a href="tel:+13467304870" class="btn btn-ghost">Call (346) 730-4870</a>
+        <a href="https://megadiscountappliance.com/shop/" class="btn btn-primary" data-i18n-html="cta.shop_html">Shop The Hot Sale <span class="arrow">→</span></a>
+        <a href="tel:+13467304870" class="btn btn-ghost" data-i18n="cta.call">Call (346) 730-4870</a>
       </div>
     </div>
   </div>
@@ -638,7 +646,7 @@
     <div class="foot-grid">
       <div class="foot-brand">
         <img src="/assets/logo/megalogo.jpg" alt="Mega Discount Appliances" />
-        <p>Houston's premium-brand appliance outlet. Refrigerators, ranges, washers, dryers, dishwashers — plus Waterdrop, Robam, Seewin, Casabrews. Free delivery, free installation, real warranty.</p>
+        <p data-i18n="foot.brand_desc">Houston's premium-brand appliance outlet. Refrigerators, ranges, washers, dryers, dishwashers — plus Waterdrop, Robam, Seewin, Casabrews. Free delivery, free installation, real warranty.</p>
         <div class="foot-social">
           <a href="https://www.facebook.com/people/Mega-Discount-Appliances/61580034824947/" target="_blank" rel="noopener" aria-label="Facebook">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-2.9h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2.1.2 2.1.2v2.3h-1.2c-1.2 0-1.5.7-1.5 1.5V12h2.6l-.4 2.9h-2.2v7A10 10 0 0 0 22 12Z"/></svg>
@@ -650,44 +658,44 @@
       </div>
 
       <div class="foot-col">
-        <h4>Shop</h4>
+        <h4 data-i18n="foot.shop_h4">Shop</h4>
         <ul>
-          <li><a href="https://megadiscountappliance.com/product-category/refrigerator/">Refrigerators</a></li>
-          <li><a href="https://megadiscountappliance.com/product-category/washer/">Laundry</a></li>
-          <li><a href="https://megadiscountappliance.com/product-category/dish-washer/">Dishwashers</a></li>
-          <li><a href="https://megadiscountappliance.com/product-category/rangehood/">Range Hoods</a></li>
-          <li><a href="https://megadiscountappliance.com/product-category/4-heart-filter-purifier/">Water Filtration</a></li>
-          <li><a href="https://megadiscountappliance.com/product-category/smart-toilet/">Smart Toilets</a></li>
+          <li><a href="https://megadiscountappliance.com/product-category/refrigerator/" data-i18n="cat.refrigerators">Refrigerators</a></li>
+          <li><a href="https://megadiscountappliance.com/product-category/washer/" data-i18n="cat.laundry">Laundry</a></li>
+          <li><a href="https://megadiscountappliance.com/product-category/dish-washer/" data-i18n="cat.dishwashers">Dishwashers</a></li>
+          <li><a href="https://megadiscountappliance.com/product-category/rangehood/" data-i18n="cat.range_hoods">Range Hoods</a></li>
+          <li><a href="https://megadiscountappliance.com/product-category/4-heart-filter-purifier/" data-i18n="cat.water_filtration">Water Filtration</a></li>
+          <li><a href="https://megadiscountappliance.com/product-category/smart-toilet/" data-i18n="foot.cat_smart_toilets">Smart Toilets</a></li>
         </ul>
       </div>
 
       <div class="foot-col">
-        <h4>Brands</h4>
+        <h4 data-i18n="foot.brands_h4">Brands</h4>
         <ul>
           <li><a href="#brands">Waterdrop</a></li>
           <li><a href="#brands">ROBAM</a></li>
           <li><a href="#brands">Seewin</a></li>
           <li><a href="#brands">Casabrews</a></li>
-          <li><a href="https://megadiscountappliance.com/shop/">All Brands</a></li>
+          <li><a href="https://megadiscountappliance.com/shop/" data-i18n="foot.all_brands">All Brands</a></li>
         </ul>
       </div>
 
       <div class="foot-col">
-        <h4>Visit</h4>
+        <h4 data-i18n="foot.visit_h4">Visit</h4>
         <ul>
           <li><a href="https://maps.google.com/?q=10861+Katy+Fwy+Houston+TX+77079" target="_blank" rel="noopener">10861 Katy Fwy<br>Houston, TX 77079</a></li>
           <li><a href="tel:+13467304870">(346) 730-4870</a></li>
           <li><a href="mailto:info@megadiscountappliance.com">info@megadiscountappliance.com</a></li>
-          <li>Mon–Sat 10–7 · Sun 11–6</li>
-          <li><a href="https://megadiscountappliance.com/about-us/">About Us</a></li>
-          <li><a href="https://megadiscountappliance.com/contact-us/">Contact</a></li>
+          <li data-i18n="foot.hours_short">Mon–Sat 10–7 · Sun 11–6</li>
+          <li><a href="https://megadiscountappliance.com/about-us/" data-i18n="foot.about">About Us</a></li>
+          <li><a href="https://megadiscountappliance.com/contact-us/" data-i18n="foot.contact">Contact</a></li>
         </ul>
       </div>
     </div>
 
     <div class="foot-bottom">
-      <div>© <span id="year">2026</span> Mega Discount Appliances · All rights reserved · <a href="https://megadiscountappliance.com/privacy-policy/" style="color:rgba(255,255,255,0.7);">Privacy</a> · <a href="https://megadiscountappliance.com/refund-and-returns-policy/" style="color:rgba(255,255,255,0.7);">Returns</a></div>
-      <div class="credit">Created by <a href="https://www.chatbotboy.ai/" target="_blank" rel="noopener">Chatbot Boy AI</a></div>
+      <div data-i18n-html="foot.copyright_html">© <span id="year">2026</span> Mega Discount Appliances · All rights reserved · <a href="https://megadiscountappliance.com/privacy-policy/" style="color:rgba(255,255,255,0.7);">Privacy</a> · <a href="https://megadiscountappliance.com/refund-and-returns-policy/" style="color:rgba(255,255,255,0.7);">Returns</a></div>
+      <div class="credit" data-i18n-html="foot.credit_html">Created by <a href="https://www.chatbotboy.ai/" target="_blank" rel="noopener">Chatbot Boy AI</a></div>
     </div>
   </div>
 </footer>
@@ -695,13 +703,7 @@
 <!-- GSAP for hero entrance only (optional) -->
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="/js/main.js" defer></script>
-<script>
-  // Year stamp
-  document.addEventListener('DOMContentLoaded', () => {
-    const y = document.getElementById('year');
-    if (y) y.textContent = new Date().getFullYear();
-  });
-</script>
+<script src="/js/i18n.js" defer></script>
 
 </body>
 </html>

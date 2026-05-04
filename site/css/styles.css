@@ -208,9 +208,10 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
   align-items: center;
   gap: 28px;
 }
-/* Phone + Shop Deals inside nav-links are mobile-drawer only */
+/* Phone + Shop Deals + Language inside nav-links are mobile-drawer only */
 .nav-links > .nav-phone,
-.nav-links > .btn { display: none; }
+.nav-links > .btn,
+.nav-links > .lang-toggle { display: none; }
 .nav-links a:not(.btn):not(.nav-phone) {
   font-family: var(--label);
   font-weight: 500;
@@ -255,6 +256,38 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
   background: var(--navy);
   color: var(--white) !important;
   border-color: var(--navy);
+}
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--label);
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--navy);
+  background: transparent;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--navy);
+  cursor: pointer;
+  transition: background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
+  line-height: 1;
+  min-height: 36px;
+}
+.lang-toggle:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+.lang-toggle svg {
+  flex: none;
+  width: 14px;
+  height: 14px;
+}
+.lang-toggle:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
 }
 .nav-phone .ph-icon {
   display: inline-block;
@@ -1391,6 +1424,15 @@ section { padding: clamp(64px, 10vw, 120px) 0; }
     margin-top: 16px;
     padding: 18px 26px;
     font-size: 0.95rem;
+  }
+  .nav-links > .lang-toggle {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 16px;
+    padding: 16px 22px;
+    font-size: 0.9rem;
+    min-height: 52px;
   }
   .nav-toggle { display: inline-flex; }
   .nav-cta { display: none; }
